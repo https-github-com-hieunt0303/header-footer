@@ -38,7 +38,42 @@
 
         <div class="header-menu">
             <div class="header-menu-left">
-                <ul>
+                <!-- responsive bar menu left -->
+                <div style="width: 30px; color: #336D51;">
+                    <label for="header-checkbox-mobile" id="header-bars">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                            class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                            </path>
+                        </svg>
+                    </label>
+                    <input type="checkbox" name="" hidden id="header-checkbox-mobile">
+                    <label for="header-checkbox-mobile" id="header-overlay"></label>
+                    <label for="header-checkbox-mobile" id="header-menu-bars">
+                        <div style="text-align: center;margin-top: 10px;" id="header-menu-bars-info">
+                            <img src="./img/avatar.png" alt="" id="avatar-user">
+                            <b style="color: rgb(255, 255, 255);" class="header-info-item">Hieu Nguyen</b>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Products</a>
+                            </li>
+                            <li>
+                                <a href="">Best Seller</a>
+                            </li>
+                            <li>
+                                <a href="">About us</a>
+                            </li>
+                        </ul>
+                    </label>
+                </div>
+                <!-- end responsive -->
+                <ul id="header-menu">
                     <li class="header-nav-menu">
                         <a href="">Home</a>
                     </li>
@@ -172,7 +207,7 @@
             </div>
         </div>
         <div style="text-align: center;">
-            <img src="./img/appdowload.png" alt="">
+            <img src="./img/appdowload.png" alt="" id="img-footer">
         </div>
         <div>
             <p>© 123 KeemBeauty Inc. All Rights Reserved</p>
