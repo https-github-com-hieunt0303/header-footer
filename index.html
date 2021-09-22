@@ -51,25 +51,107 @@
                     </label>
                     <input type="checkbox" name="" hidden id="header-checkbox-mobile">
                     <label for="header-checkbox-mobile" id="header-overlay"></label>
-                    <label for="header-checkbox-mobile" id="header-menu-bars">
-                        <div style="text-align: center;margin-top: 10px;" id="header-menu-bars-info">
-                            <img src="./img/avatar.png" alt="" id="avatar-user">
-                            <b style="color: rgb(255, 255, 255);" class="header-info-item">Hieu Nguyen</b>
+                    <label id="header-menu-bars">
+                        <div style="margin-top: 10px;">
+                            <div style="float: left; margin-right: 5px;margin-left: 10px;">
+                                <img style="width: 25px;height: 25px;" src="./img/avatar.png" alt="" id="avatar-user">
+                            </div>
+                            <div>
+                                <b style="color: rgb(255, 255, 255);">Hieu Nguyen</b>
+                                <p style="color: rgb(235, 220, 220);font-size: 10px;margin: 0;">bibi030301@gmail.com</p>
+                            </div>
                         </div>
                         <ul>
                             <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Products</a>
+                                <a href="">All</a>
                             </li>
                             <li>
                                 <a href="">Best Seller</a>
                             </li>
                             <li>
-                                <a href="">About us</a>
+                                <a href="">New</a>
+                            </li>
+                            <input type="checkbox" name="" hidden id="checkbox-dropdown-itemFace">
+                            <li>
+                                <a href="">Face</a>
+                                <label for="checkbox-dropdown-itemFace">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                        class="svg-inline--fa fa-chevron-down fa-w-14" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path fill="currentColor"
+                                            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                        </path>
+                                    </svg>
+                                </label>
+                            </li>
+                            <!-- item drop menu -->
+                            <li class="header-dropdown-mobile-item face">
+                                <a href="">Serum</a>
+                            </li>
+                            <li class="header-dropdown-mobile-item face">
+                                <a href="">Cleaner</a>
+                            </li>
+                            <li class="header-dropdown-mobile-item face">
+                                <a href="">Moisture Cream</a>
+                            </li>
+                            <li class="header-dropdown-mobile-item face">
+                                <a href="">Face Oil</a>
+                            </li>
+                            <li class="header-dropdown-mobile-item face">
+                                <a href="">Exfoliating Cream </a>
+                            </li>
+                            <!-- end drop menu -->
+                            <input type="checkbox" name="" hidden id="checkbox-dropdown-itemBody">
+                            <li>
+                                <a href="">Body</a>
+                                <label for="checkbox-dropdown-itemBody">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down"
+                                        class="svg-inline--fa fa-chevron-down fa-w-14" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path fill="currentColor"
+                                            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                                        </path>
+                                    </svg>
+                                </label>
+                            </li>
+                            <!-- item drop menu -->
+                            <li class="header-dropdown-mobile-item body">
+                                <a href="">Body Scrub</a>
+                            </li>
+                            <li class="header-dropdown-mobile-item body">
+                                <a href="">Body Oil</a>
+                            </li>
+                            <li class="header-dropdown-mobile-item body">
+                                <a href="">Body Polish</a>
+                            </li>
+                            <li class="header-dropdown-mobile-item body">
+                                <a href="">Soaking Salts</a>
+                            </li>
+                            <li class="header-dropdown-mobile-item body">
+                                <a href="">Cleansing Bar Soap</a>
+                            </li>
+                            <!-- end drop menu -->
+                            <li>
+                                <a href="">Tools</a>
                             </li>
                         </ul>
+                        <hr>
+                        <div style="color: white;font-size: 13px;">
+                            <p>
+                                Working time: Mon - Fri 09:00 ~ 17:00 (except Saturday, Sunday and public holidays)
+                            </p>
+                            <p>
+                                Consulting and customer care 1800 6324 - 0938.664.657(SPA)
+                            </p>
+                            <p>
+                                Email: keemsbeauty@gmail.com
+                            </p>
+                            <p>
+                                Business registration address: 4A Floor, Vincom Building, 72 Le Thanh Ton, Ben Nghe
+                                Ward,
+                                District 1, City. Ho Chi Minh, Vietnam.
+                            </p>
+                        </div>
                     </label>
                 </div>
                 <!-- end responsive -->
@@ -211,6 +293,43 @@
         </div>
         <div>
             <p>© 123 KeemBeauty Inc. All Rights Reserved</p>
+        </div>
+        <div id="footer-ending">
+            <hr><br>
+            <div style="display: grid;grid-template-columns: 60% 40%;">
+                <div>
+                    <div>
+                        <b style="float: left;">Working time: </b>
+                        <p> Mon - Fri 09:00 ~ 17:00 (except Saturday, Sunday and public holidays)</p>
+                    </div>
+                    <div>
+                        <b style="float: left;">Consulting and customer care: </b>
+                        <p>028 3827 9777 (Ext: 125)</p>
+                    </div>
+                    <div>
+                        <b style="float: left;">Email: </b>
+                        <p>keemsbeauty@gmail.com</p>
+                    </div>
+                </div>
+                <div>
+                    <img style="width: 250px;float: right;" src="./img/icon-footer1.png" alt="">
+                </div>
+            </div>
+            <br><br><br>
+            <div>
+                <p>
+                    Business registration certificate: 0309984165 - Date of issue: 05/05/2010, amended for the 18th
+                    time, on 22/01/2020.
+                </p>
+                <p>
+                    Issuing agency: Business Registration Office - Ho Chi Minh City Department of Planning and
+                    Investment
+                </p>
+                <p>
+                    Business registration address: 4A Floor, Vincom Building, 72 Le Thanh Ton, Ben Nghe Ward, District
+                    1, City. Ho Chi Minh, Vietnam.
+                </p>
+            </div>
         </div>
     </footer>
 </body>
