@@ -163,7 +163,7 @@
 
 .dp-info-detailProduct {
     background-color: #d8f0e4;
-    margin: 0 100px 0 100px;
+    margin: 0 30px 0 30px;
 }
 
 .dp-info-detailProduct pre {
@@ -183,6 +183,114 @@
     /* display: none; */
 }
 
-.dp-morethan-detailProduct a:hover{
+.dp-morethan-detailProduct a:hover {
     color: #336D51;
+}
+
+.dp-button-buynow-containerProducs {
+    width: 100%;
+    background-color: #336D51;
+    color: white;
+    border: #336D51 1px solid;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 5px 0 5px 0;
+}
+
+.dp-button-buynow-containerProducs:hover {
+    background-color: white;
+    color: #336D51;
+}
+
+/* reviews comment */
+
+.dp-container-number-of-comment-1star {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dp-category-comment-1star {
+    display: flex;
+    justify-content: center;
+}
+
+.dp-category-comment-1star p {
+    float: left;
+    margin: 0;
+}
+
+.dp-number-reviews-1star {
+    position: relative;
+    margin: 0 50px 0 10px;
+}
+
+.dp-number-reviews-1star.total-border {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    color: white;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+.dp-number-reviews-1star.border-star {
+    margin: 0;
+    color: #336D51;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #336D51;
+    font-size: 10px;
+}
+
+.dp-number-reviews-1star.border-star.star5 {
+    width: 80%;
+}
+
+.dp-number-reviews-1star.border-star.star4 {
+    width: 60%;
+}
+
+.dp-number-reviews-1star.border-star.star3 {
+    width: 80%;
+}
+
+.dp-number-reviews-1star.border-star.star2 {
+    width: 40%;
+}
+
+.dp-number-reviews-1star.border-star.star1 {
+    width: 20%;
+}
+
+/* comment */
+
+.dp-container-comments.hr {
+    width: 90%;
+    border: 0.5px solid #608d77;
+}
+
+.dp-container-comments.container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin: 10px 10px 10px 10px;
+}
+
+.dp-comment-img {
+    text-align: right;
+    margin-right: 5px;
+}
+
+.dp-comment-img img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.dp-comment-info.name-client, .dp-comment-info.reviews {
+    margin: 0;
+}
+.dp-comment-info.name-client{
+    font-weight: bold;
 }

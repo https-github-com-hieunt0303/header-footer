@@ -18,6 +18,25 @@
             padding: 0;
         }
     </style>
+    <!-- gmail -->
+    <meta name="google-signin-client_id"
+        content="890852495964-0g7u1n48meo0tc7tp2roirp113196bhq.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="script.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+    <!-- facebook -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: 'your-app-id',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 </head>
 
 <body>
@@ -179,11 +198,41 @@
             </div>
         </div>
     </div>
+    <!-- =======================================================body ==================================================-->
     <div style="text-align: center;">
-
-        <p>tạm thời cho vài cái hình để lướt fixed cái header</p>
         <div>
-            <img src="./img/avatar.png" alt="">
+            <label for="">Tên tài khoản</label>
+            <input type="text" name="" id="">
+        </div>
+        <div>
+            <label for="">Tên gmail</label>
+            <input type="text" name="" id="input-namegmail">
+        </div>
+        <div>
+            <button>Đăng nhập</button>
+            <button>Đăng xuất</button>
+        </div>
+
+        <!-- facebook -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0&appId=1205223989999478&autoLogAppEvents=1"
+            nonce="MYttIngu"></script>
+        <div class="fb-login-button" data-width="" data-size="" data-button-type="" data-layout=""
+            data-auto-logout-link="" data-use-continue-as=""></div>
+        <!--  -->
+        <div id="my-signin2"></div>
+        <a href="#" onclick="signOut();">Sign out</a>
+        <script>
+            function signOut() {
+                var auth2 = gapi.auth2.getAuthInstance();
+                auth2.signOut().then(function () {
+                    console.log('User signed out.');
+                });
+            }
+        </script>
+        <div>
+            <!-- <img src="./img/avatar.png" alt="" id="img-gmail"> -->
         </div>
     </div>
     <footer id="footer">
