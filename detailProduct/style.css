@@ -294,3 +294,17 @@
 .dp-comment-info.name-client{
     font-weight: bold;
 }
+
+
+#anchor-top {
+    color: #336D51;
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
