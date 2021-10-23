@@ -1,19 +1,23 @@
-.dp-img-slide img {
-    width: 60px;
-    height: 60px;
+#layout-grid-left-detail-product{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.item-left-img-product {
+    width: 70%;
+    height: 70%;
     margin: 0 10px 10px 0;
 }
 
-.dp-img-slide {
-    float: left;
+#dp-img-slide {
+    /* float: left; */
 }
 
-.dp-imgShow img {
-    width: 400px;
-    height: 400px;
+#item-show-img-product {
+    width: 90%;
+    height: 40vmax;
 }
 
-.dp-grid-slide {
+#top-page {
     display: grid;
     margin: 10px 30px 10px 30px;
     grid-template-columns: 50% 50%;
@@ -22,7 +26,7 @@
 /* grid right */
 
 .dp-titleProduct {
-    font-size: 30px;
+    font-size: 3vmax;
     font-weight: bold;
     margin: 0 0 0 0;
 }
@@ -35,7 +39,7 @@
 
 .dp-star-reviews div {
     float: left;
-    height: 25px;
+    /* height: 25px; */
 }
 
 .dp-star-reviews {
@@ -51,6 +55,7 @@
     margin-bottom: 0;
     position: relative;
     top: 10%;
+    font-size: 1.5vmax;
 }
 
 .dp-numberProduct button {
@@ -66,7 +71,7 @@
     font-weight: bold;
 }
 
-.dp-btn-product button {
+#dp-btn-product button {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
@@ -74,12 +79,12 @@
     border-radius: 20px;
 }
 
-.dp-addtocart button {
+#dp-addtocart {
     background-color: #336D51;
     color: white;
 }
 
-.dp-buynow button {
+#dp-buynow {
     background-color: white;
     color: #336D51;
 }
@@ -93,47 +98,53 @@
 
 .dp-table-relatedProducts td:nth-child(2) {
     color: #336D51;
-    font-size: 25px;
+    font-size: 3vmax;
 }
 
 .dp-table-relatedProducts hr {
-    width: 400px;
+    width: 20vw;
     text-align: right;
-    justify-content: right;
+    /* justify-content: right; */
     border: #336D51 0.5px solid;
 }
 
 .dp-img-products .img {
     width: 100%;
-    height: 350px;
-    position: relative;
+    height: 30vmax;
 }
 
 .dp-img-products {
-    position: relative;
+    position: sticky;
 }
 
 .dp-img-products .favor {
     position: absolute;
     top: 10px;
     left: 10px;
-}
-
-.dp-container-products {
-    width: 300px;
+    width: 3vmax;
 }
 
 .dp-container-slide-relatedProducts {
     display: grid;
     grid-template-columns: 5% 90% 5%;
     margin: 10px 30px 10px 30px;
+    text-align: center;
+}
+
+/* css 1 cục sản phẩm ( hình, tên, sao, reviews, button buy now) */
+
+.dp-container-products {
+    padding: 10px;
 }
 
 .dp-grid-slide-relatedProducts {
     display: grid;
     grid-template-columns: 33.33% 33.34% 33.33%;
     margin: 0 auto;
-    grid-gap: 20px;
+}
+
+.db-btn-slide-relatedProducts {
+    position: relative;
 }
 
 .db-btn-slide-relatedProducts.left {
@@ -148,25 +159,75 @@
     right: 50%;
 }
 
+/* name */
+
+.dp-container-info-product-name {
+    margin: 0 10px 5px 10px;
+    font-size: 1.3vmax;
+}
+
+/* reviews */
+
+.dp-container-info-product-reviews {
+    color: black;
+    margin: 0;
+    font-size: 1.3vmax;
+}
+
+/* price */
+
+.dp-container-info-product-price {
+    color: #787878;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.3vmax;
+}
+
+/* button buy now */
+
+.dp-button-buynow-containerProducs {
+    width: 100%;
+    background-color: #336D51;
+    color: white;
+    border: #336D51 1px solid;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 5px 0 5px 0;
+}
+
+.dp-button-buynow-containerProducs:hover {
+    background-color: white;
+    color: #336D51;
+}
+
 /* dp-grid-detailProducts */
 
-.dp-grid-detailProducts {
+#dp-grid-detailProducts {
     display: grid;
     grid-template-columns: 33.33% 33.4% 33.33%;
     text-align: center;
     margin: 10px 250px 10px 250px;
 }
 
-.dp-grid-detailProducts p {
+#dp-grid-detailProducts p {
     font-weight: bold;
+    font-size: 2vmax;
+    margin: 0;
+    color: #336D51;
 }
 
-.dp-info-detailProduct {
-    background-color: #d8f0e4;
+.div-img-information-detail-product, .information-detail-product {
+    display: none;
+}
+
+#dp-info-detailProduct {
+    background-color: #ffffff;
     margin: 0 30px 0 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
 }
 
-.dp-info-detailProduct pre {
+#dp-info-detailProduct pre {
     padding: 10px 30px 10px 30px;
 }
 
@@ -184,21 +245,6 @@
 }
 
 .dp-morethan-detailProduct a:hover {
-    color: #336D51;
-}
-
-.dp-button-buynow-containerProducs {
-    width: 100%;
-    background-color: #336D51;
-    color: white;
-    border: #336D51 1px solid;
-    border-radius: 20px;
-    margin-top: 5px;
-    padding: 5px 0 5px 0;
-}
-
-.dp-button-buynow-containerProducs:hover {
-    background-color: white;
     color: #336D51;
 }
 
@@ -229,6 +275,7 @@
 .dp-number-reviews-1star.total-border {
     margin: 0;
     position: absolute;
+    top: 20%;
     width: 100%;
     color: white;
     background-color: #D9D9D9;
@@ -240,6 +287,7 @@
     margin: 0;
     color: #336D51;
     position: absolute;
+    top: 20%;
     border-radius: 10px;
     background-color: #336D51;
     font-size: 10px;
@@ -284,17 +332,18 @@
 }
 
 .dp-comment-img img {
-    width: 70px;
+    width: 70%;
     border-radius: 50%;
 }
 
-.dp-comment-info.name-client, .dp-comment-info.reviews {
-    margin: 0;
-}
-.dp-comment-info.name-client{
-    font-weight: bold;
+.dp-comment-info.name-client, .dp-comment-info.reviews,.dp-comment-info.comment {
+    margin: 3px;
+    font-size: 1.5vmax;
 }
 
+.dp-comment-info.name-client {
+    font-weight: bold;
+}
 
 #anchor-top {
     color: #336D51;
@@ -305,6 +354,48 @@
     cursor: pointer;
     display: none;
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
+
+/* number page */
+
+#container-number-page {
+    text-align: right;
+    padding-right: 20px;
+    margin: 20px;
+}
+
+.icon-arrow-number-page {
+    width: 10px;
+    border: 1px solid black;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.item-number-page {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 2px;
+    font-weight: bold;
+    color: #898989;
+}
+
+.item-number-page.active {
+    color: black;
+}
+
+/* rating bar */
+.dp-category-comment-1star-number{
+    font-size: 4vmin;
+    margin-right: 3px;
+}
+.dp-container-cmt{
+    margin: 10px 30px 10px 30px;
+}
+.dp-container-ratingbar {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: 5px 300px 5px 300px;
+}

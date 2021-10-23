@@ -8,11 +8,16 @@
     <title>detail products</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivedp.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         .icon-star {
-            width: 15px;
-            height: 15px;
+            width: 3vmin;
+            height: 3vmin;
+        }
+
+        body {
+            margin: 0;
         }
     </style>
     <script src="script.js"></script>
@@ -20,40 +25,43 @@
 
 <body>
     <!-- thanh anchor top  -->
-    <a href="#top-page" id="anchor-top">
-        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-up"
-            class="svg-inline--fa fa-arrow-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512">
-            <path fill="currentColor"
-                d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z">
-            </path>
-        </svg>
-    </a>
+    <div id="container-anchor-top">
+        <a href="#top-page" id="anchor-top">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-up"
+                class="svg-inline--fa fa-arrow-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z">
+                </path>
+            </svg>
+        </a>
+    </div>
     <div class="dp-grid-slide" id="top-page">
-        <div>
-            <div class="dp-img-slide">
+        <div id="layout-grid-left-detail-product">
+            <div id="dp-img-slide">
                 <div>
-                    <img src="../img/imgdemo1.png" alt="">
+                    <img src="../img/imgdemo1.png" alt="" class="item-left-img-product">
                 </div>
                 <div>
-                    <img src="../img/imgdemo2.png" alt="">
+                    <img src="../img/imgdemo2.png" alt="" class="item-left-img-product">
                 </div>
                 <div>
-                    <img src="../img/imgdemo3.png" alt="">
+                    <img src="../img/imgdemo3.png" alt="" class="item-left-img-product">
                 </div>
                 <div>
-                    <img src="../img/imgdemo4.png" alt="">
+                    <img src="../img/imgdemo4.png" alt="" class="item-left-img-product">
                 </div>
             </div>
             <div class="dp-imgShow">
-                <img src="../img/imgdemo1.png" alt="">
+                <img src="../img/imgdemo1.png" alt="" id="item-show-img-product">
             </div>
         </div>
         <div class="dp-grid-right-info">
             <div>
                 <p class="dp-titleProduct">Bakuciol Retinol Alternative</p>
-                <p>Smoothing Serum</p>
-                <p>Bakuchiol Serum is a naturally derived retinol-alternative serum to help
+                <p id="detail-header-information-header-product">Smoothing Serum</p>
+                <p id="detail-information-header-product">Bakuchiol Serum is a naturally derived retinol-alternative
+                    serum to help
                     smooth the appearance of fine lines and wrinkles while sealing in
                     hydration. Bakuchiol, the key ingredient, is sourced sustainably from the
                     Ayurvedic Babchi plant.</p>
@@ -61,11 +69,11 @@
             </div>
             <div class="dp-star-reviews">
                 <div>
-                    <img src="../img/star.png" alt="">
-                    <img src="../img/star.png" alt="">
-                    <img src="../img/star.png" alt="">
-                    <img src="../img/star.png" alt="">
-                    <img src="../img/star.png" alt="">
+                    <img src="../img/star.png" alt="" class="icon-star">
+                    <img src="../img/star.png" alt="" class="icon-star">
+                    <img src="../img/star.png" alt="" class="icon-star">
+                    <img src="../img/star.png" alt="" class="icon-star">
+                    <img src="../img/star.png" alt="" class="icon-star">
                 </div>
                 <div>
                     <p>102 Reviews</p>
@@ -78,23 +86,23 @@
                             <p>Quantity</p>
                         </td>
                         <td>
-                            <button>-</button>
+                            <button id="button-minus-number-product">-</button>
                         </td>
                         <td>
-                            <p>1</p>
+                            <p id="number-product">1</p>
                         </td>
                         <td>
-                            <button>+</button>
+                            <button id="button-add-number-product">+</button>
                         </td>
                     </tr>
                 </table>
             </div>
-            <div class="dp-btn-product">
-                <div class="dp-addtocart">
-                    <button>ADD TO CART</button>
+            <div id="dp-btn-product">
+                <div>
+                    <button id="dp-addtocart">ADD TO CART</button>
                 </div>
-                <div class="dp-buynow">
-                    <button>BUY NOW</button>
+                <div>
+                    <button id="dp-buynow">BUY NOW</button>
                 </div>
             </div>
         </div>
@@ -102,32 +110,56 @@
     <!-- detail product -->
     <div>
         <!-- header -->
-        <div class="dp-grid-detailProducts">
-            <div>
-                <p>DETAIL</p>
+        <div id="dp-grid-detailProducts">
+            <div class="dp-grid-detailProducts-item">
+                <div class="grid-container-information-detail-product">
+                    <div>
+                        <p>DETAIL</p>
+                    </div>
+                    <div class="div-img-information-detail-product">
+                        <img class="icon-star img-information-detail-product" src="../img/arrowright.png" alt="">
+                    </div>
+                </div>
+                <div class="information-detail-product">
+                    <p>detail information</p>
+                </div>
             </div>
-            <div>
-                <p>INGREDIENTS</p>
+            <div class="dp-grid-detailProducts-item">
+                <div class="grid-container-information-detail-product">
+                    <div>
+                        <p>INGREDIENTS</p>
+                    </div>
+                    <div class="div-img-information-detail-product">
+                        <img class="icon-star img-information-detail-product" src="../img/arrowright.png" alt="">
+                    </div>
+                </div>
+                <div class="information-detail-product">
+                    <p>detail information</p>
+                </div>
             </div>
-            <div>
-                <p>HOW TO USE</p>
+            <div class="dp-grid-detailProducts-item">
+                <div class="grid-container-information-detail-product">
+                    <div>
+                        <p>HOW TO USE</p>
+                    </div>
+                    <div class="div-img-information-detail-product">
+                        <img class="icon-star img-information-detail-product" src="../img/arrowright.png" alt="">
+                    </div>
+                </div>
+                <div class="information-detail-product">
+                    <p>detail information</p>
+                </div>
             </div>
         </div>
-        <div class="dp-info-detailProduct">
-            <div>
-                <pre>
-Suitable for: Bakuchiol Serum is suitable for all skin, including sensitive types. 
-
-
-Target concerns: 
-+ Dullness/Uneven skin texture 
-+ Fine lines/Wrinkles 
-+ Dryness 
-
-
-Gentle enough for the most sensitive skin types, Bakuchiol works with the skin to refine the 
-appearance of fine lines and wrinkles with the power of natural botanicals.
-                </pre>
+        <div id="dp-info-detailProduct">
+            <div style="padding: 10px;">
+                <p>Suitable for: Bakuchiol Serum is suitable for all skin, including sensitive types. </p>
+                <p>Target concerns: </p>
+                <p>+ Dullness/Uneven skin texture</p>
+                <p>+ Fine lines/Wrinkles </p>
+                <p>+ Dryness </p>
+                <p>Gentle enough for the most sensitive skin types, Bakuchiol works with the skin to refine the
+                    appearance of fine lines and wrinkles with the power of natural botanicals.</p>
             </div>
             <div class="dp-morethan-detailProduct">
                 <a href="">More than ...</a>
@@ -146,7 +178,8 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
             <table>
                 <tr>
                     <td>
-                        <hr </td>
+                        <hr>
+                    </td>
                     <td>Related Products</td>
                     <td>
                         <hr>
@@ -156,7 +189,7 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
         </div>
         <!-- related products -->
         <div class="dp-container-slide-relatedProducts">
-            <div style="position: relative;">
+            <div class="db-btn-slide-relatedProducts">
                 <img class="db-btn-slide-relatedProducts left" src="../img/arrowleft.png" alt="">
             </div>
             <div class="dp-grid-slide-relatedProducts">
@@ -170,22 +203,30 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
                         </div>
                     </div>
                     <div style="text-align: center;" class="dp-container-info-product">
-                        <p style="margin: 0 10px 5px 10px;">Phoenix Rosehip Anti-Aging
+                        <p class="dp-container-info-product-name">Phoenix Rosehip Anti-Aging
                             Face Oil - For Dry Skin</p>
-                        <div style="display: flex;justify-content: center;">
-                            <div style="float: left;">
+                        <div>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
-                            </div>
-                            <div style="float: left;margin-left: 10px;">
-                                <p style="color: black;margin: 0;">102 Reviews</p>
-                            </div>
+                            </span>
+                            <span class="dp-container-info-product-reviews">
+                                102 Reviews
+                            </span>
                         </div>
                         <div>
-                            <p style="color: #787878;font-weight: bold;margin: 0;">$54.00</p>
+                            <p class="dp-container-info-product-price">$54.00</p>
                         </div>
                         <div>
                             <button class="dp-button-buynow-containerProducs">BUY NOW</button>
@@ -202,22 +243,30 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
                         </div>
                     </div>
                     <div style="text-align: center;" class="dp-container-info-product">
-                        <p style="margin: 0 10px 5px 10px;">Phoenix Rosehip Anti-Aging
+                        <p class="dp-container-info-product-name">Phoenix Rosehip Anti-Aging
                             Face Oil - For Dry Skin</p>
-                        <div style="display: flex;justify-content: center;">
-                            <div style="float: left;">
+                        <div>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
-                            </div>
-                            <div style="float: left;margin-left: 10px;">
-                                <p style="color: black;margin: 0;">102 Reviews</p>
-                            </div>
+                            </span>
+                            <span class="dp-container-info-product-reviews">
+                                102 Reviews
+                            </span>
                         </div>
                         <div>
-                            <p style="color: #787878;font-weight: bold;margin: 0;">$54.00</p>
+                            <p class="dp-container-info-product-price">$54.00</p>
                         </div>
                         <div>
                             <button class="dp-button-buynow-containerProducs">BUY NOW</button>
@@ -234,22 +283,30 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
                         </div>
                     </div>
                     <div style="text-align: center;" class="dp-container-info-product">
-                        <p style="margin: 0 10px 5px 10px;">Phoenix Rosehip Anti-Aging
+                        <p class="dp-container-info-product-name">Phoenix Rosehip Anti-Aging
                             Face Oil - For Dry Skin</p>
-                        <div style="display: flex;justify-content: center;">
-                            <div style="float: left;">
+                        <div>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
+                            </span>
+                            <span>
                                 <img class="icon-star" src="../img/star.png" alt="">
-                            </div>
-                            <div style="float: left;margin-left: 10px;">
-                                <p style="color: black;margin: 0;">102 Reviews</p>
-                            </div>
+                            </span>
+                            <span class="dp-container-info-product-reviews">
+                                102 Reviews
+                            </span>
                         </div>
                         <div>
-                            <p style="color: #787878;font-weight: bold;margin: 0;">$54.00</p>
+                            <p class="dp-container-info-product-price">$54.00</p>
                         </div>
                         <div>
                             <button class="dp-button-buynow-containerProducs">BUY NOW</button>
@@ -257,7 +314,7 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
                     </div>
                 </div>
             </div>
-            <div style="position: relative;">
+            <div class="db-btn-slide-relatedProducts">
                 <img class="db-btn-slide-relatedProducts right" src="../img/arrowright.png" alt="">
             </div>
         </div>
@@ -265,29 +322,32 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
     <!-- end related products -->
 
     <!-- products reviews // comment-->
-    <div style="margin: 10px 30px 10px 30px;">
+    <div class="dp-container-cmt">
         <div style="background-color: #bad3c7;">
             <!-- collect rating bar -->
-            <div style="display: grid; grid-template-columns: 30% 70%;margin: 5px 300px 5px 300px;">
-                <div style="border: rgb(168, 164, 164) 1px solid;margin: 20px 0 10px 0;text-align: center;">
-                    <div>
-                        <p style="margin: 10px 0 10px 0;">4.8</p>
-                    </div>
-                    <div>
-                        <img class="icon-star" src="../img/star.png" alt="">
-                        <img class="icon-star" src="../img/star.png" alt="">
-                        <img class="icon-star" src="../img/star.png" alt="">
-                        <img class="icon-star" src="../img/star.png" alt="">
-                        <img class="icon-star" src="../img/star.png" alt="">
-                    </div>
-                    <div>
-                        <p style="margin: 10px 0 10px 0;">132 reviews</p>
+            <div class="dp-container-ratingbar">
+                <div
+                    style="border: rgb(168, 164, 164) 1px solid;margin: 20px 0 10px 0;text-align: center;position: relative;">
+                    <div style="position: absolute;top: 20%;left: 5%;right: 5%;">
+                        <div>
+                            <p style="margin: 5px 0 5px 0;font-size: 1.5vmax;">4.8</p>
+                        </div>
+                        <div>
+                            <img class="icon-star" src="../img/star.png" alt="">
+                            <img class="icon-star" src="../img/star.png" alt="">
+                            <img class="icon-star" src="../img/star.png" alt="">
+                            <img class="icon-star" src="../img/star.png" alt="">
+                            <img class="icon-star" src="../img/star.png" alt="">
+                        </div>
+                        <div>
+                            <p style="margin: 5px 0 5px 0;font-size: 1.5vmax;">132 reviews</p>
+                        </div>
                     </div>
                 </div>
                 <div style="border: rgb(168, 164, 164) 1px solid;margin: 20px 0 10px 0;">
                     <div class="dp-container-number-of-comment-1star">
                         <div class="dp-category-comment-1star">
-                            <p>5</p>
+                            <span class="dp-category-comment-1star-number">5</span>
                             <img class="icon-star" src="../img/star.png" alt="">
                         </div>
                         <div class="dp-number-reviews-1star">
@@ -297,7 +357,7 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
                     </div>
                     <div class="dp-container-number-of-comment-1star">
                         <div class="dp-category-comment-1star">
-                            <p>4</p>
+                            <span class="dp-category-comment-1star-number">4</span>
                             <img class="icon-star" src="../img/star.png" alt="">
                         </div>
                         <div class="dp-number-reviews-1star">
@@ -307,7 +367,7 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
                     </div>
                     <div class="dp-container-number-of-comment-1star">
                         <div class="dp-category-comment-1star">
-                            <p>3</p>
+                            <span class="dp-category-comment-1star-number">3</span>
                             <img class="icon-star" src="../img/star.png" alt="">
                         </div>
                         <div class="dp-number-reviews-1star">
@@ -317,7 +377,7 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
                     </div>
                     <div class="dp-container-number-of-comment-1star">
                         <div class="dp-category-comment-1star">
-                            <p>2</p>
+                            <span class="dp-category-comment-1star-number">2</span>
                             <img class="icon-star" src="../img/star.png" alt="">
                         </div>
                         <div class="dp-number-reviews-1star">
@@ -327,7 +387,7 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
                     </div>
                     <div class="dp-container-number-of-comment-1star">
                         <div class="dp-category-comment-1star">
-                            <p>1</p>
+                            <span class="dp-category-comment-1star-number">1</span>
                             <img class="icon-star" src="../img/star.png" alt="">
                         </div>
                         <div class="dp-number-reviews-1star">
@@ -355,9 +415,11 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
                             </div>
                             <p class="dp-comment-info reviews">Love the serum</p>
                             <p class="dp-comment-info comment">
-                                Have heard about bakuchiol for a while, finally purchased this at a great beauty shop,
+                                Have heard about bakuchiol for a while, finally purchased this at a great beauty
+                                shop,
                                 Joia,
-                                in Northampton, MA. Love! Smoothing similar to retinol without the tingling/irritation.
+                                in Northampton, MA. Love! Smoothing similar to retinol without the
+                                tingling/irritation.
                             </p>
                         </div>
                     </div>
@@ -379,19 +441,41 @@ appearance of fine lines and wrinkles with the power of natural botanicals.
                             </div>
                             <p class="dp-comment-info reviews">Love the serum</p>
                             <p class="dp-comment-info comment">
-                                Have heard about bakuchiol for a while, finally purchased this at a great beauty shop,
+                                Have heard about bakuchiol for a while, finally purchased this at a great beauty
+                                shop,
                                 Joia,
-                                in Northampton, MA. Love! Smoothing similar to retinol without the tingling/irritation.
+                                in Northampton, MA. Love! Smoothing similar to retinol without the
+                                tingling/irritation.
                             </p>
                         </div>
                     </div>
                     <hr class="dp-container-comments hr">
                 </div>
-
             </div>
             <!-- số trang -->
-            <div>
-
+            <div id="container-number-page">
+                <span>
+                    <svg class="icon-arrow-number-page left" aria-hidden="true" focusable="false" data-prefix="fas"
+                        data-icon="arrow-left" class="svg-inline--fa fa-arrow-left fa-w-14" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="item-number-page active">1</span>
+                <span class="item-number-page">2</span>
+                <span class="item-number-page">3</span>
+                <span class="item-number-page">...</span>
+                <span>
+                    <svg class="icon-arrow-number-page right" aria-hidden="true" focusable="false" data-prefix="fas"
+                        data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-w-14" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                        </path>
+                    </svg>
+                </span>
             </div>
         </div>
     </div>
