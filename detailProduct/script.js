@@ -9,6 +9,7 @@ window.addEventListener('scroll', function () {
     // console.log(distanceToTop);
 });
 
+
 $(document).ready(function () {
     // thay đổi ảnh khi click 
     $('.item-left-img-product').on('click', function () {
