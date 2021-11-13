@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
     <style>
         * {
@@ -44,7 +46,7 @@
         <div class="header-top">
             <div class="grid-header">
                 <div>
-                    <p>[Deal] Free $10 gift when buying combo of innisfree product</p>
+                    <p id="notify-header">[Deal] Free $10 gift when buying combo of innisfree product</p>
                 </div>
                 <div class="header-info">
                     <p class="header-info-item">Check your order</p>
@@ -176,37 +178,83 @@
                 <!-- end responsive -->
                 <ul id="header-menu">
                     <li class="header-nav-menu">
-                        <a href="">Home</a>
+                        <img src="img/logo_text.png" alt="" style="width: 100px;">
                     </li>
                     <li class="header-nav-menu">
-                        <a href="">Products</a>
+                        <a href="" class="expand">Home</a>
                     </li>
                     <li class="header-nav-menu">
-                        <a href="">Best Seller</a>
+                        <a href="" class="expand">Products</a>
                     </li>
                     <li class="header-nav-menu">
-                        <a href="">About us</a>
+                        <a href="" class="expand">Best Seller</a>
+                    </li>
+                    <li class="header-nav-menu">
+                        <a href="" class="expand">About us</a>
                     </li>
                 </ul>
             </div>
-            <div class="div-img-nav-menu">
-                <img src="./img/logo-header.jpg" alt="" class="img-logo-nav-menu">
-            </div>
             <div class="header-menu-right">
-                <img src="./img/icon-shoppingbar.png" alt="">
-                <img src="./img/icon-search.png" alt="">
+                <div id="cart-shopping">
+                    <img src="./img/icon-shoppingbar.png" alt="" class="header-menu-right-icon" onclick="clickCart()">
+                    <div id="container-overlay-cart">
+                        <p id="header-overlay-cart">Your shopping cart</p>
+                        <!-- empty -->
+                        <div id="overlay-cart-empty">
+                            <img src="img/cartemptry.png" alt="" id="img-cart-overlay-empty">
+                        </div>
+                        <!-- not empty -->
+                        <div id="overlay-cart">
+                            <div class="container-item-cart">
+                                <!-- item here -->
+                                <div class="overlay-item-cart">
+                                    <div class="item-overlay-cart">
+                                        <div class="item-overlay-cart-left">
+                                            <img src="img/imgdemo1.png" alt="" class="img-overlay-cart">
+                                        </div>
+                                        <div class="item-overlay-cart-right">
+                                            <div class="grid-name-product-overlay-cart">
+                                                <div>
+                                                    <p class="name-product-overlay-cart">Bakuchiol Retinol1
+                                                        AlternativeSmoothing Serum</p>
+                                                </div>
+                                                <div style="text-align: right;">
+                                                    <p class="number-product-overlay-cart">x1</p>
+                                                </div>
+                                            </div>
+                                            <p class="size-product-overlay-cart">Size: 30ml</p>
+                                            <div class="grid-name-product-overlay-cart">
+                                                <div>
+                                                    <p class="price-product-overlay-cart">$50.00</p>
+                                                </div>
+                                                <div style="text-align: right;">
+                                                    <img src="img/icon-bin.png" alt=""
+                                                        class="icon-delete-product-overlay-cart">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="hr-overlay-cart">
+                            </div>
+                            <button id="button-overlay-cart"> VIEW CART → </button>
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/icon-search.png" alt="" class="header-menu-right-icon">
             </div>
         </div>
     </div>
     <!-- =======================================================body ==================================================-->
-    <div style="text-align: center;">
+    <div style="text-align: center;background-color: bisque;">
+        <button onclick="addNewItemOverlayCart()">add item overlay cart</button>
         <div>
             <label for="">Tên tài khoản</label>
             <input type="text" name="" id="">
         </div>
         <div>
             <label for="">Tên gmail</label>
-            <input type="text" name="" id="input-namegmail">
+            <input type="text" name="" id="input-namegmail1">
         </div>
         <div>
             <button>Đăng nhập</button>
@@ -214,23 +262,8 @@
         </div>
 
         <!-- facebook -->
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous"
-            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0&appId=1205223989999478&autoLogAppEvents=1"
-            nonce="MYttIngu"></script>
-        <div class="fb-login-button" data-width="" data-size="" data-button-type="" data-layout=""
-            data-auto-logout-link="" data-use-continue-as=""></div>
-        <!--  -->
-        <div id="my-signin2"></div>
-        <a href="#" onclick="signOut();">Sign out</a>
-        <script>
-            function signOut() {
-                var auth2 = gapi.auth2.getAuthInstance();
-                auth2.signOut().then(function () {
-                    console.log('User signed out.');
-                });
-            }
-        </script>
+
+
         <div>
             <!-- <img src="./img/avatar.png" alt="" id="img-gmail"> -->
         </div>
